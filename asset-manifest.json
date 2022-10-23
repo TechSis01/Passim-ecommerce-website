@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/Passim-ecommerce-website/static/css/main.eb36524c.css",
+    "main.js": "/Passim-ecommerce-website/static/js/main.686c64e6.js",
+    "static/js/787.f00544bf.chunk.js": "/Passim-ecommerce-website/static/js/787.f00544bf.chunk.js",
+    "static/media/product2.png": "/Passim-ecommerce-website/static/media/product2.90bd8ddf58b0d70a3713.png",
+    "static/media/model.jpg": "/Passim-ecommerce-website/static/media/model.3f608af6172b25044cd2.jpg",
+    "static/media/oil-serum.jpg": "/Passim-ecommerce-website/static/media/oil-serum.df03a57f76a63a879cc0.jpg",
+    "static/media/skincare-image.jpg": "/Passim-ecommerce-website/static/media/skincare-image.71a9c230b8d761a074f6.jpg",
+    "static/media/hairmask.jpg": "/Passim-ecommerce-website/static/media/hairmask.2eff2db94633922de91a.jpg",
+    "static/media/visa.png": "/Passim-ecommerce-website/static/media/visa.503f6bd056f53194cba5.png",
+    "static/media/product3.png": "/Passim-ecommerce-website/static/media/product3.7af5975b540d2e47eeda.png",
+    "static/media/face-toner.jpg": "/Passim-ecommerce-website/static/media/face-toner.dbfa2edbc513b3829ee1.jpg",
+    "static/media/post-shave.png": "/Passim-ecommerce-website/static/media/post-shave.c18b7f0b2d87d62f4cbc.png",
+    "static/media/moisturizer.jpg": "/Passim-ecommerce-website/static/media/moisturizer.d978600d281e9da3a04f.jpg",
+    "static/media/product4.png": "/Passim-ecommerce-website/static/media/product4.501995f10f9ac67bb86f.png",
+    "static/media/mastercard.png": "/Passim-ecommerce-website/static/media/mastercard.b4390a788f2ab844c7e3.png",
+    "static/media/product5.png": "/Passim-ecommerce-website/static/media/product5.1ac6d9ce1bbc09d17663.png",
+    "static/media/micellar-water.jpg": "/Passim-ecommerce-website/static/media/micellar-water.e92b3654ec0c915d42b8.jpg",
+    "static/media/bb-cream.jpg": "/Passim-ecommerce-website/static/media/bb-cream.96f546fdaf3371e42ee0.jpg",
+    "static/media/product1.png": "/Passim-ecommerce-website/static/media/product1.ec2b7af3e0aae8a35d1f.png",
+    "static/media/repair-cream.jpg": "/Passim-ecommerce-website/static/media/repair-cream.8a4bc46a048a7106b481.jpg",
+    "static/media/skin-care-set.jpg": "/Passim-ecommerce-website/static/media/skin-care-set.8c68f2b0a5d4d2c84308.jpg",
+    "static/media/lip-balm.jpg": "/Passim-ecommerce-website/static/media/lip-balm.eef34e478a2fd4cb64f5.jpg",
+    "static/media/verve.png": "/Passim-ecommerce-website/static/media/verve.8cc065ead9e56723a1ab.png",
+    "index.html": "/Passim-ecommerce-website/index.html",
+    "main.eb36524c.css.map": "/Passim-ecommerce-website/static/css/main.eb36524c.css.map",
+    "main.686c64e6.js.map": "/Passim-ecommerce-website/static/js/main.686c64e6.js.map",
+    "787.f00544bf.chunk.js.map": "/Passim-ecommerce-website/static/js/787.f00544bf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eb36524c.css",
+    "static/js/main.686c64e6.js"
+  ]
+}
