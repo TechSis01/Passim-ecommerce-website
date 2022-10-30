@@ -19,6 +19,7 @@ function App(){
   const[showModal,setShowModal] = useState(true)
   const[isCheckedOut, setIsCheckedOut] = useState(false)
   const[isSuccessful, setIsSuccessful] = useState(false)
+  const[navBar, setNavBar] = useState(false)
   
   const[reload,setReload] = useState(false)
  //const[beforePreloader,setBeforePreloader] = useState(false)
@@ -32,7 +33,7 @@ function App(){
   
   return(
     <Fragment>
-      <globalVariable.Provider value={{cartVisible,setCartVisible,totalAmount,setTotalAmount,isCheckedOut,setIsCheckedOut,isSuccessful,setIsSuccessful}}>
+      <globalVariable.Provider value={{navBar,setNavBar,cartVisible,setCartVisible,totalAmount,setTotalAmount,isCheckedOut,setIsCheckedOut,isSuccessful,setIsSuccessful}}>
           <HeroImage cartproducts = {cartproducts} setCartProducts = {setCartProducts}/>
           <Product  cartproducts = {cartproducts} setCartProducts = {setCartProducts} totalAmount = {totalAmount} setTotalAmount={setTotalAmount} setShowModal = {setShowModal}/>
           <Features />

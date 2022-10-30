@@ -213,6 +213,7 @@ export const products = [
                                 <div className = "product-name">{products.productName}</div>
                                 <div className="product-price">&#8358;{products.price}</div>
                                <div className = "add-to-cart-div" onClick = {()=>cartHandler(products.id,array,products.quantity,products)}> <a href="cart/link" className = "add-to-cart-btn">ADD TO CART</a></div>
+                               <div className = "add-to-cart-div-2" onClick = {()=>cartHandler(products.id,array,products.quantity,products)}> <a href="cart/link" className = "add-to-cart-btn">ADD TO CART</a></div>
                             </div>
                         ))}
                     </div>

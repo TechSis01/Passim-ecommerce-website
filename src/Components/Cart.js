@@ -93,7 +93,7 @@ const Cart = ({setShowModal,beforePreloader, setBeforePreloader })=>{
         localStorage.removeItem('products')
         localStorage.removeItem('total')
        setCartProducts([])
-        console.log('hello')
+     
      }
     return(
         <Fragment>
@@ -102,7 +102,7 @@ const Cart = ({setShowModal,beforePreloader, setBeforePreloader })=>{
                 {cartproducts.length === 0 && (<p>No Items added to cart</p>)}
                 {cartproducts.length > 0 && cartproducts.map((p,index)=>(
                     <div className = "cart-item" key={p.id}>
-                        <img src={p.img} width="100"></img>
+                        <img src={p.img} width="100" id="cart-img"></img>
                          <div className="name-qty-container">
                                 <div>{p.productName}</div>
                             <div className="qty-box">

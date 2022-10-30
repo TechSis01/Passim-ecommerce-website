@@ -13,20 +13,31 @@ const Nav = [
 const pages = ["About Us","About Me","Gift Cards","Pricing Plans","Contact Us","404 Error Page"]
 
 const Navbar = ({showPages,setShowPages,cartproducts,setCartProducts})=>{
-    const {cartVisible,setCartVisible} = useContext(globalVariable)
+    
+    const {cartVisible,setCartVisible,navBar, setNavBar} = useContext(globalVariable)
+    
+  
+    function showNav(){
+        setNavBar(!navBar)
+    }
     let searchIcon = <i className="fa-solid fa-magnifying-glass"></i>
     let cartIcon =  <i className="fi fi-rr-shopping-bag"></i>
+
+    
 
     const showCartContainer = ()=>{
         setCartVisible(!cartVisible)
     }
+
+    
+    
     return(
         <Fragment>
             <nav>
                 <div className="brand">
                     <h1>{Nav[0].brandName}</h1>
                 </div>
-                <div className = "right-menu">
+                <div className = {`right-menu ${navBar ? 'right-menu-visible' : ''}`}>
                 <div className = "dropdown">
                     <div id="link">{Nav[0].home}</div>
                     <div className="dropdown-content">
@@ -111,17 +122,18 @@ const Navbar = ({showPages,setShowPages,cartproducts,setCartProducts})=>{
                     </div>
                 </div>
                 </div>
-                <div className='hamburger'>
-                    <div className = "line"></div>
-                    <div className = "line"></div>
-                    <div className = "line"></div>
-                </div>
+               
                 <div className="nav-icons">
                     <div>{searchIcon}</div>
                     <div className = "cart-icon-container" onClick = {showCartContainer}>
-                         <div>{cartIcon}</div>
+                         <div className='cart-icon'>{cartIcon}</div>
                          <span className = "cartItem-length">{cartproducts.length}</span>
                     </div>
+                </div>
+                <div className='hamburger' onClick = {showNav}>
+                    <div className = "line"></div>
+                    <div className = "line"></div>
+                    <div className = "line"></div>
                 </div>
             </nav>
         </Fragment>

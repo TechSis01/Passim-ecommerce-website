@@ -33,9 +33,9 @@ const {isCheckedOut,setIsCheckedOut,isSuccessful,setIsSuccessful} = useContext(g
                         <div className = "order-summary">
                             <h1>Order Summary</h1>
                             {cartproducts.map((product)=>(
-                                <div className="order-summary-products">
+                                <div className="order-summary-products" key = {product.id}>
                                     <img src={product.img} alt="skincare-product" className="modal-product-image"></img>
-                                    <div>
+                                    <div >
                                         <div>{product.productName}</div>
                                         <div>Quantity : {product.quantity}</div>
                                         <div>&#8358; {product.price}</div>

@@ -9,7 +9,7 @@ const FeaturesText = ()=>{
             <div className = "features-text">
                 <h2>{heading}</h2>
                 <p id="features-paragraph-1">{paragraph}</p>
-                <p>{text}</p>
+                <p id="features-paragraph-2">{text}</p>
                 <button className = "features-button">READ MORE</button>
             </div>
         </Fragment>
