@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Passim-ecommerce-website/static/css/main.d1a357c2.css",
+    "main.css": "/Passim-ecommerce-website/static/css/main.4fa940a8.css",
     "main.js": "/Passim-ecommerce-website/static/js/main.76cbdccf.js",
     "static/js/787.f00544bf.chunk.js": "/Passim-ecommerce-website/static/js/787.f00544bf.chunk.js",
     "static/media/product2.png": "/Passim-ecommerce-website/static/media/product2.90bd8ddf58b0d70a3713.png",
@@ -24,12 +24,12 @@
     "static/media/lip-balm.jpg": "/Passim-ecommerce-website/static/media/lip-balm.eef34e478a2fd4cb64f5.jpg",
     "static/media/verve.png": "/Passim-ecommerce-website/static/media/verve.8cc065ead9e56723a1ab.png",
     "index.html": "/Passim-ecommerce-website/index.html",
-    "main.d1a357c2.css.map": "/Passim-ecommerce-website/static/css/main.d1a357c2.css.map",
+    "main.4fa940a8.css.map": "/Passim-ecommerce-website/static/css/main.4fa940a8.css.map",
     "main.76cbdccf.js.map": "/Passim-ecommerce-website/static/js/main.76cbdccf.js.map",
     "787.f00544bf.chunk.js.map": "/Passim-ecommerce-website/static/js/787.f00544bf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1a357c2.css",
+    "static/css/main.4fa940a8.css",
     "static/js/main.76cbdccf.js"
   ]
 }
