@@ -28,6 +28,7 @@ const Footer=()=>{
         <footer>
             <div className="first-footer">
             <div className = "passim">PASSIM</div>
+           <div className="footer-links">
             <div className = "footer-data1-container">
                 <div className="footer-data1">
                     <a href="">{footerData1[0].About}</a>
@@ -61,6 +62,7 @@ const Footer=()=>{
                 <div className="footer-data1">
                     <a href="">{footerData2[0].Twitter}</a>
                 </div>
+            </div>
             </div>
             <div>
                 <div id="subscribe">SUBSCRIBE TO OUR NEWSLATER</div>

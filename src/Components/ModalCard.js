@@ -59,19 +59,19 @@ const ModalCard = ({showModal,setShowModal,cartproducts,setCartProducts})=>{
     }
     const newCvv = ()=>{
         let cvvCardNum = cvvRef.current.value
-        if(cvvCardNum.trim().length === 0 || isNaN(cvvCardNum)){
+        if(cvvCardNum.length === 4 || isNaN(cvvCardNum[0])){
             setIsCvvValid(true)
         }
-        else if(cvvCardNum.trim().length > 0){
+        else if(cvvCardNum.length > 0 && cvvCardNum.length < 4){
             setIsCvvValid(false)
         }
     }
     const newExp = ()=>{
         let expCardNum = expRef.current.value
-        if(expCardNum.trim().length === 0 || isNaN(expCardNum)){
+        if(expCardNum.trim().length === 6 || isNaN(expCardNum[0] || expCardNum.trim().length > 5)){
             setIsExpValid(true)
         }
-        else if(expCardNum.trim().length > 0){
+        else if(expCardNum.trim().length > 0 && expCardNum.length < 5  || expCardNum.trim().match(/^(0[1-9]|1[0-2])\/?([0-9]{4}|[0-9]{2})$/)){
             setIsExpValid(false)
         }
     }

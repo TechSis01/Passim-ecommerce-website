@@ -520,7 +520,8 @@ nav{
 .cvv-exp-date-container{
   display:flex;
   justify-content: space-around;
-  width:96%;
+  width:93%;
+  align-items: center;
 }
 .input{
   font-family: 'Syne', sans-serif;
@@ -543,8 +544,7 @@ nav{
   font-size:3.0rem; 
 }
 .modal-input-container{ 
-  /* margin-top:5%; */
-  /* margin-bottom:5%; */
+ 
   padding-bottom:5%;
 }
 .master-div{
@@ -603,21 +603,22 @@ form{
   color:red;
   font-size:1.1rem;
   display:inline-block;
-  margin-left:17%;
+  margin-left:15%; 
 }
-
+.expiry-date{
+  margin-left:4%;
+}
 /* ==========================FOOTER========================================== */
 footer{
   padding:5% 0%;
   background-color: black;
 }
 .first-footer{
-  display:grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
- 
+  display:flex;
+  justify-content: space-around;
+  padding:0% 5%;
 }
 .passim{
-  margin-left:10%;
   font-size: 7.0rem;
   color:white;
   align-self: center;
@@ -635,6 +636,11 @@ footer{
 }
 .footer-data1 a:hover{
   color:red;
+}
+.footer-links{
+  display:flex;
+  justify-content: space-around;
+  width:100%;
 }
 .footer-input-container{
   color:white;
@@ -703,7 +709,7 @@ footer{
     .hamburger{
       display:block;
       margin-right:3%;
-  
+      z-index: 300000;
     }
     .nav-icons{
       margin-left:30%;
@@ -711,20 +717,21 @@ footer{
     .right-menu{
       position:absolute;
       flex-direction: column;
-      top:50px;
+      top:-10px;
       right:0px;
       width:100%;
+      height:100vh;
       line-height: 38px;
       background-color: white; 
       z-index: 300;
       text-align: center;
-      transform: translateY(-250px);
-      transition: 0.5s ease-out;
+      transform: translateY(-970px);
+      transition: 0.2s ease-out;
   
     }
     .right-menu-visible{
       transform:translateY(0px);
-      transition: 0.5s ease-out;
+      transition: 0.2s ease-out;
   
     }
     #link{
@@ -794,7 +801,7 @@ footer{
       padding:2% 0%;
       background-color: red;
       width:56%;
-      margin:5% 0%;
+      margin:5% auto;
       border-radius: 5%;
       font-size:1.1rem;
   
@@ -839,12 +846,8 @@ footer{
       font-size: 1.1rem;
       width:50%;
     }
-    /* .footer{
-      padding:0% 5%;
-    } */
     .first-footer{
       grid-template-columns: 1fr ;
-     
     }
     .passim{
       font-size:3.0rem;
@@ -859,14 +862,12 @@ footer{
     .footer-data1{
       font-size:1.3rem;
       width:100%;
-    
       margin-left:5%;
       margin-top:3%;
     }
     
     #subscribe{
       margin-top:10%;
-    
     }
     .footer-input-container{
       width:100%;
@@ -877,7 +878,77 @@ footer{
     .back-to-top-btn{
       margin-top: 5%;
     }
+    /* MODALS PART */
+  .modal-content{
+    width:90%;
+    margin:40% auto;
+  }
+  .card-details h4{
+    font-size:1.1rem;
+  }
+  .card-details em{
+    font-size:1.0rem;
+  }
+  .card-details h5{
+    font-size:1.1rem;
+  }
+  .payment-cards{
+    width:25px;
+  }
+  .input-1{
+   height:25px;
+  }
+  .input-2{
+    height:25px;
+    width:100%;
+   
+  }
+  .close-modal-btn{
+    font-size:1.1rem;
+  }
+ .expiry-date{
+  margin-left: 0%;
+ }
+  .modal-input-container label{
+    font-size:1.0rem;
+  }
+  .cvv-exp-date-container{
+    width:80%;
+    flex-direction: column;
+  }
+  .error{
+    display:block;
+    margin-left: 0%;
+    font-size: 0.9rem;
+  }
+  .error2{
+    display:block;
+    margin-left: 0%;
+    font-size: 0.8rem;
 
+  }
+  .checkout-btn2{
+    font-size:1.2rem;
+  }
+  .order-summary h1{
+    font-size:1.5rem;
+    text-align: center;
+  }
+  .order-summary-products{
+    grid-template-columns: 1fr;
+    place-items: center;
+    font-size:1.0rem;
+  }
+  .modal-product-image{
+    width:60px;
+  }
+  #total-box{
+    font-size:1.1rem;
+  }
+  .thankyou-msg{
+    width:40%;
+    margin-top:50%;
+  }
 }
 @media only screen and (max-width: 480px) and (min-width: 320px){
  
@@ -890,7 +961,7 @@ footer{
   .hamburger{
     display:block;
     margin-right:3%;
-
+    z-index:30000;
   }
   .nav-icons{
     margin-left:40%;
@@ -898,25 +969,27 @@ footer{
   .right-menu{
     position:absolute;
     flex-direction: column;
-    top:50px;
+    top:-5px;
     right:0px;
     width:100%;
-    line-height: 38px;
+    height:100vh;
+    /* line-height: 20px; */
     background-color: white; 
     z-index: 300;
     text-align: center;
-    transform: translateY(-250px);
-    transition: 0.5s ease-out;
+    transform: translateY(-970px);
+    transition: 0.2s ease-out;
 
   }
   .right-menu-visible{
     transform:translateY(0px);
-    transition: 0.5s ease-out;
+    transition: 0.2s ease-out;
 
   }
   #link{
     color:black;
     margin-right:20%;
+    
   }
   .dropdown:hover .dropdown-content{
     display:none;
@@ -924,15 +997,26 @@ footer{
   .cart{
     width:80%;
     top:40px;
+   
+  }
+  #cart-img{
+    width:50px;
   }
   .cart-visible{
     transform: translateX(-0px);
   }
+  .fa-magnifying-glass{
+    font-size:1.1rem;
+   }
+   .fi-rr-shopping-bag{
+    font-size:1.1rem;
+   }
   header h1{
-    font-size:2.0rem;
+    font-size:1.4rem;
+   width:100%;
   }
   header p{
-    font-size:1.2rem;
+    font-size:0.7rem;
   }
   .full-container{
     flex-direction:column-reverse;
@@ -955,7 +1039,7 @@ footer{
     padding:2% 0%;
     background-color: red;
     width:35%;
-    margin:5% 0%;
+    margin:5% auto;
     border-radius: 5%;
 
    }
@@ -984,43 +1068,128 @@ footer{
     line-height: 1.5;
   }
   .features-text h2{
-    font-size:2.5rem;
+    font-size:2.0rem;
   }
   .features-image{
     width:100%;
   }
   .features-button{
-    font-size: 1.5rem;
-    width:30%;
+    font-size: 1.2rem;
+    width:35%;
+    padding:2% 2%;
   }
-  /* .footer{
-    padding:0% 5%;
-  } */
-  .first-footer{
-    grid-template-columns: 1fr 1fr 1fr;
-    padding:0% 5%;
-  }
+  
   .passim{
-    font-size:3.0rem;
-    margin-left: 5%;
+    font-size:2.5rem;
+    margin-left: 1%;
     width:30%;
     /* align-self: flex-start; */
   }
   .first-footer{
-    width:100%;
+    width:90%;
+    display:flex;
+    flex-wrap: wrap;
+  }
+  .footer-links{
+    display:flex;
+    justify-content: space-around;
+    width:50%;
   }
   .footer-data1{
     font-size:1.3rem;
-    width:100%;
-    position:relative;
-    right:50%;
-    /* margin-right:35%; */
+  }
+  .back-to-top-btn{
+    font-size:1.1rem;
+  }
+  .copyright-container em{
+    font-size:1.1rem;
   }
   #subscribe{
     margin-top:10%;
+    width:100%;
+    font-size:1.1rem;
   }
   .footer-input-container{
     width:100%;
+    font-size: 1.1rem;
+  }
+  ::placeholder{
+    font-size:1.1rem;
+  }
+  .footer-input-container{
+    align-items: center;
+  }
+  .footer-input-container a{
+    font-size:1.1rem;
+  }
+  /* MODALS PART */
+  .modal-content{
+    width:95%;
+    margin:20% auto;
+  }
+  .card-details h4{
+    font-size:1.1rem;
+  }
+  .card-details em{
+    font-size:1.0rem;
+  }
+  .card-details h5{
+    font-size:1.1rem;
+  }
+  .payment-cards{
+    width:25px;
+  }
+  .input-1{
+   height:25px;
+   font-size:1.1rem;
+  }
+  .input-2{
+    height:25px;
+    width:100%;
+    font-size:1.1rem;
+  }
+  .close-modal-btn{
+    font-size:1.1rem;
+  }
+  .modal-input-container label{
+    font-size:1.2rem;
+  }
+  .expiry-date{
+    margin-left: 0%;
+   }
+  .cvv-exp-date-container{
+    width:80%;
+    flex-direction: column;
+  }
+  .error{
+    display:block;
+    margin-left: 0%;
+  }
+  .error2{
+    display:block;
+    margin-left: 0%;
+  }
+  .checkout-btn2{
+    font-size:1.2rem;
+  }
+  .order-summary h1{
+    font-size:1.5rem;
+    text-align: center;
+  }
+  .order-summary-products{
+    grid-template-columns: 1fr;
+    place-items: center;
+    font-size:1.2rem;
+  }
+  .modal-product-image{
+    width:80px;
+  }
+  #total-box{
+    font-size:1.3rem;
+  }
+  .thankyou-msg{
+    width:40%;
+    margin-top:50%;
   }
 }
 
@@ -1037,10 +1206,7 @@ footer{
    .cart{
     width:60%;
     top:40px;
-   }/*
-  .cart-visible{
-    transform: translateX(-0px);
-  } */
+   }
   header h1{
     font-size:3.0rem;
   }
@@ -1051,18 +1217,14 @@ footer{
     grid-template-columns: 1fr 1fr;
     width:100%;
     margin-top:8%;
+    padding:0% 1% 0% 0%;
+    
   }
   .inner-Product-container-img{
     width:200px;
   }
    .add-to-cart-div{
     display:none;
-    /* position: static;
-    text-align: center;
-    margin-top:10%;
-    background-color: white;
-    animation-name:none !important;
-    transition: none !important; */
   } 
   /* THE ADD TO CART BUTTON THAT SHOWS ON MOBILE SCREENS */
   .add-to-cart-div-2{
@@ -1074,7 +1236,7 @@ footer{
     padding:2% 2%;
     background-color: red;
     width:40%;
-    margin:5% 0%;
+    margin:5% auto;
     border-radius: 5%;
    }
   .add-to-cart-div-2 a{
@@ -1095,6 +1257,7 @@ footer{
   .Features-section{
     padding:5% 3% 10% 3%; 
     margin-top:10%;
+    flex-direction: column;
     
   }
   .features-text{
@@ -1109,29 +1272,103 @@ footer{
   }
   .features-button{
     font-size: 1.5rem;
-    width:50%;
-  }
- 
-  .first-footer{
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding:0% 5%;
+    width:30%;
   }
   .passim{
     font-size:3.0rem;
     margin-left: 0%;
-    width:50%;
-    /* align-self: flex-start; */
+    width:45%;
   }
   .first-footer{
+    display:flex;
     width:90%;
+    flex-wrap: wrap; 
+  }
+  .footer-links{
+    display:flex;
+    justify-content: space-around;
+    width:40%;
+  }
+  #subscribe{
+    margin-top:15%;
   }
   .footer-data1{
     font-size:1.3rem;
     width:100%;
+    margin-right:20%;
+    justify-content: space-evenly;
   }
  
   .footer-input-container{
     width:100%;
+  }
+ 
+  /* MODALS PART */
+  .modal-content{
+    width:90%;
+    margin:10% auto;
+  }
+  .card-details h4{
+    font-size:1.1rem;
+  }
+  .card-details em{
+    font-size:1.0rem;
+  }
+  .card-details h5{
+    font-size:1.1rem;
+  }
+  .payment-cards{
+    width:50px;
+  }
+  .input-1{
+   height:25px;
+  }
+  .input-2{
+    height:25px;
+    width:100%;
+   
+  }
+  .close-modal-btn{
+    font-size:1.1rem;
+  }
+ 
+  .modal-input-container label{
+    font-size:1.2rem;
+  }
+  .expiry-date{
+    margin-left: 0%;
+   }
+  .cvv-exp-date-container{
+    width:80%;
+    flex-direction: column;
+  }
+  .error{
+    display:block;
+    margin-left:0%;
+  }
+  .error2{
+    display:block;
+    margin-left: 0%;
+  }
+  .checkout-btn2{
+    font-size:1.2rem;
+  }
+  .order-summary h1{
+    font-size:1.5rem;
+    text-align: center;
+  }
+  .order-summary-products{
+    font-size:1.2rem;
+  }
+  .modal-product-image{
+    width:80px;
+  }
+  #total-box{
+    font-size:1.3rem;
+  }
+  .thankyou-msg{
+    width:40%;
+    margin-top:20%;
   }
 }
 
@@ -1185,7 +1422,7 @@ footer{
     padding:2% 2%;
     background-color: red;
     width:40%;
-    margin:5% 0%;
+    margin:5% auto;
     border-radius: 5%;
    }
   .add-to-cart-div-2 a{
@@ -1222,11 +1459,6 @@ footer{
     font-size: 1.7rem;
     width:50%;
   }
- 
-  .first-footer{
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding:0% 5%;
-  }
   .passim{
     font-size:3.0rem;
     margin-left: 0%;
@@ -1235,6 +1467,15 @@ footer{
   }
   .first-footer{
     width:90%;
+    padding-left: 5%;
+    display:flex;
+    flex-wrap:wrap;
+  
+  }
+  .footer-links{
+    display:flex;
+    justify-content: space-around;
+    width:30%;
   }
   .footer-data1{
     font-size:1.6rem;
@@ -1243,6 +1484,69 @@ footer{
  
   .footer-input-container{
     width:100%;
+  }
+  #subscribe{
+    margin-top:15%;
+    justify-self: flex-start;
+  }
+   /* MODALS PART */
+   .modal-content{
+    width:90%;
+    margin:10% auto;
+  }
+  .card-details h4{
+    font-size:1.3rem;
+  }
+  .card-details em{
+    font-size:1.2rem;
+  }
+  .card-details h5{
+    font-size:1.3rem;
+  }
+  .payment-cards{
+    width:70px;
+  }
+  .input-1{
+   height:25px;
+  }
+  .input-2{
+    height:25px;
+    width:100%;
+   
+  }
+  .close-modal-btn{
+    font-size:1.1rem;
+  }
+ .expiry-date{
+  margin-left:10%;
+ }
+  .modal-input-container label{
+    font-size:1.4rem;
+  }
+  .cvv-exp-date-container{
+    width:80%;
+  }
+  .checkout-btn2{
+    font-size:1.2rem;
+  }
+  .order-summary h1{
+    font-size:1.5rem;
+    text-align: center;
+  }
+  .order-summary-products{
+   
+   
+    font-size:1.5rem;
+  }
+  .modal-product-image{
+    width:100px;
+  }
+  #total-box{
+    font-size:1.5rem;
+  }
+  .thankyou-msg{
+    width:40%;
+    margin-top:20%;
   }
 }
 
